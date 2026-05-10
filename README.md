@@ -28,6 +28,7 @@ Hematopoietic stem cells (HSCs)
       • circulate as precursors → mature in tissues
 
 —---------------------------------------------------------------
+
 WHITE BLOOD CELLS CIRCULATING IN THE BLOOD
 1. Neutrophils (38–80%)
    - First responders
