@@ -601,7 +601,8 @@ The cytokines present (secreted by APCs in the area) during full activation dete
 -Th22   (formed from IL-6 + TNF-α environment)
    → main cytokines produced: IL-22
 -functions: epithelial barrier, defense tissue repair, antimicrobial peptide production
-—---------------------------
+--------------------------
+
 
 >>Once helper T cells become activated, they express CD40L (CD154), which binds to CD40 receptor on APCs and B cells. This interaction produces several major effects:
 *activated killer T cells also express CD40L but much less and temporary (not important as in helper T cells) 
@@ -631,11 +632,12 @@ activated killer T cell killing mechanisms:
 
 Inhibitory signal in ALL activated T cells:
 -CTLA-4 receptors on the T cell’s surface 24-48 hrs after activation CTLA-4 is upregulated (initially stored inside the cell, then moves to the surface)
+
 >B7 binds to the CTLA-4 receptor better than CD28 on T cells
    → suppresses activation
 *Tregs always express CTLA-4 > suppresses other T cells
-—--------------------------------------------------------------------------------------
-—---------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
 B CELLS 
 -B cell receptor’s co-receptor complex:   
