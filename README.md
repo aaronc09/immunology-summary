@@ -74,14 +74,14 @@ C. TUMOR NECROSIS FACTOR (TNF) – “Inflammation / Cell death”
 
 D. CHEMOKINES – “Where to go”
 -Subset of cytokines that direct immune cell migration (chemotaxis)
-- CXCL8 (IL-8) (macrophages) 
+- CXCL8 (IL-8) (secreted by macrophages) 
          → attracts neutrophils
-- CCL2 (macrophages/monocytes) 
+- CCL2 (secreted by macrophages/monocytes) 
          → attracts monocytes
-- CXCL13 (follicular DCs, stromal cells inside B-cell follicles)  
-*stromal cells are supporting cells of a tissue
-*parenchymal cells do the main job (ex. Hepatocytes in liver, neurons in brain)
-         →after activation Tfh cells upregulated CSCR5 receptors > migrate towards B-cell follicle
+- CXCL13 (secreted by follicular DCs and stromal cells inside B-cell follicles)  
+   *stromal cells are supporting cells of a tissue
+   *parenchymal cells do the main job (ex. Hepatocytes in liver, neurons in brain)
+         →after activation Tfh cells upregulate CSCR5 receptors > then migrate towards B-cell follicle
 
 E. GROWTH FACTORS – “Grow / differentiate / repair (healing)”
 -granulocyte colony-stimulating factor (G-CSF) 
@@ -100,14 +100,14 @@ E. GROWTH FACTORS – “Grow / differentiate / repair (healing)”
 
 F. ANTI-INFLAMMATORY / REGULATORY CYTOKINES – “Turn off / balance”
 -Maintain immune homeostasis and prevent excessive inflammation
-- IL-10 (macrophages, dendritic cells, Tregs)
-      → suppresses cytokine production
+- IL-10 (DCs, macrophages, Tregs)
       → inhibits macrophages and dendritic cells
+      → suppresses cytokine production
       → reduces antigen presentation
-- “transforming growth factor-β (TGF-β)” (see prevsiou section for which cells produce)
+- “transforming growth factor-β (TGF-β)” (see previous section for which cells produce)
       → promotes Treg development
       → suppresses T cell activation, suppresses excessive immune activation, maintain immune tolerance, prevent autoimmunity
-      → promotes class switching to IgA for mucosal immunity, gut/lung protection
+      → promotes class switching in B cells to IgA for mucosal immunity, gut/lung protection
 *****************************************************
 
 
@@ -497,15 +497,15 @@ B. ADAPTIVE IMMUNE SYSTEM
 MHC (MAJOR HISTOCOMPATIBILITY COMPLEX)
 
 (MHC class I)
--Expressed on all nucleated cells in the body
+-Expressed on all nucleated cells in the body (including APCs)
 -Genes: HLA-A, HLA-B, HLA-C (chromosome 6) + paired with β2-microglobulin
    >highly polymorphic → binds diverse peptides
 >>Presents intracellular antigens (“what’s inside the cell”) to CD8+ T cells
 
 (MHC class II)
 -Expressed on antigen-presenting cells (APCs):
-   -macrophages
    -dendritic cells
+   -macrophages
    -B cells   
    >>presents extracellular antigens to CD4+ T cells
 —---------------------------------------------------------------------
@@ -522,7 +522,7 @@ T CELLS
    -Full complex:
       -TCR + CD3γε + CD3δε + ζζ
 
-T CELL’s survival
+T CELL’s fate
 (central tolerance (Thymus))
 Strong self-binding → apoptosis (via BIM)
 → eliminates self-reactive T cells
@@ -537,14 +537,13 @@ T-cell activation (and helper T cell differentiation)
 1. Initial activation steps
 (signal 1)
 -TCR on naive CD4 helper T cell binds:
-   peptide antigen + MHC II on APC
-*TCR on naive CD8 killer T cells binds to peptide antigen + MHC class I
+   matching peptide antigen + MHC II on APC
+*TCR on naive CD8 killer T cells binds to peptide antigen + MHC class I (on APC or regular cell)
 -Mainly activates:
    NFAT pathway (via calcium/calcineurin signaling)
 
 (signal 2 (costimulation))
--CD28 on T cell binds:
-   B7 (CD80/CD86) on APC
+-B7 (CD80/CD86) ligand on APC (amount depends on degree on their activation state), which provides the costimulation to CD28 receptor on the naive T cells
 -Mainly activates:
    AP-1 and NF-κB pathways
 
@@ -557,26 +556,31 @@ full activation = signal 1 + signal 2
 The cytokines present (secreted by APCs in the area) during full activation determine which helper T-cell subtype develop during the full activation:
 
 (major helper T-cell subsets)  
--Th1   (formed from IL-12 environment during activation)
-   → main cytokine produced:   IFN-γ (interferon gamma)
--main functions: intracellular pathogen defense, viruses, tuberculosis, macrophage activation, cell-mediated immunity
--Th2   (formed from IL-4 environment during activation)
-   → main cytokines produced:  IL-4, IL-5, IL-13
--main functions: parasite defense, allergy/asthma, eosinophil activation, IgE class switching
--Th17   (formed from TGF-β + IL-6 environment during activation)       
- *developing Th17 cells often begin producing IL-21:
-      autocrine signaling → stimulates themselves
-      paracrine signaling → stimulates nearby Th17 cells (amplifies and reinforces the Th17 program)
-   → main cytokine produced:  IL-17
--main functions: extracellular bacteria/fungi defense, neutrophil recruitment, mucosal inflammation
- *IL-23 (usually from dendritic cells/macrophages) becomes very important later:
-      -stabilizes mature Th17 cells, supports survival, increases inflammatory/pathogenic function, strongly associated with autoimmune inflammation
 -T follicular helper cells (Tfh)   (formed from IL-21 environment during activation)
    *Tfh cells mainly reside inside germinal centers within follicles of lymph nodes and spleen
    → main cytokine produced: IL-21
 -main functions:  B-cell help, germinal center reactions, class switching, affinity maturation, memory B-cell formation
    *they can remain highly active while still expressing inhibitory receptors such as:
       PD-1 > this helps regulate potentially dangerous antibody responses during intense B-cell selection
+   *they have CXCR5 receptors, which attracts them to CXCL 13- rich follicles
+
+-Th1   (formed from IL-12 environment during activation)
+   → main cytokine produced:   IFN-γ (interferon gamma)
+-main functions: intracellular pathogen defense, viruses, tuberculosis, macrophage activation, cell-mediated immunity
+
+-Th2   (formed from IL-4 environment during activation)
+   → main cytokines produced:  IL-4, IL-5, IL-13
+-main functions: parasite defense, allergy/asthma, eosinophil activation, IgE class switching
+
+-Th17   (formed from TGF-β + IL-6 environment during activation)       
+   *developing Th17 cells often begin producing IL-21:
+      autocrine signaling → stimulates themselves
+      paracrine signaling → stimulates nearby Th17 cells (amplifies and reinforces the Th17 program)
+   → main cytokine produced:  IL-17
+-main functions: extracellular bacteria/fungi defense, neutrophil recruitment, mucosal inflammation
+   *IL-23 (usually from dendritic cells/macrophages) becomes very important later:
+      -stabilizes mature Th17 cells, supports survival, increases inflammatory/pathogenic function, strongly associated with autoimmune inflammation
+
 -regulatory T cells (Treg)   (formed from IL-2 and TGF-β environment during activation)
    → main cytokines produced: IL-10 + TGF-β
 -main functions: immune suppression, peripheral tolerance, prevention of autoimmunity
@@ -589,42 +593,39 @@ The cytokines present (secreted by APCs in the area) during full activation dete
 -Th9  (formed from IL-4 + TGF-β environment)
    → main cytokines produced: IL-9
 -functions:   parasite defense, allergy, mast cell activation
+
 -Th22   (formed from IL-6 + TNF-α environment)
    → main cytokines produced: IL-22
 -functions: epithelial barrier, defense tissue repair, antimicrobial peptide production
 —---------------------------
 
->>once helper T cells become activated, they express CD40L (CD154)
--CD40L binds CD40 on APCs and B cells
--this interaction produces several major effects:
+>>Once helper T cells become activated, they express CD40L (CD154), which binds to CD40 receptor on APCs and B cells. This interaction produces several major effects:
+*activated killer T cells also express CD40L but much less and temporary (not important as in helper T cells) 
 
 -APC “licensing” (APCs become more stimulatory)
    ↑ B7 (CD80/CD86) expression
    ↑ cytokine production
-   → stronger costimulation of naive T cells, enhanced overall T-cell activation, maximal activation of killer T cells (CD8 T cells)
+      → stronger costimulation of naive T cells
+      →maximal activation of already stimulated killer CD8 T cells 
 
 -B-cell activation 
--CD40L-CD40 interaction is essential for:
-   T-dependent B-cell activation
-   germinal center formation
-   class switching
-   affinity maturation
-   memory B-cell formation
-
-*activated killer T cells can also express CD40L but usually at lower levels, more transiently, and less centrally important than helper T-cell CD40L expression
+-CD40L on activated helper T cells binding CD40 on B cells is essential for:
+   -T-dependent B-cell activation (see in later section)
 —------------------------------------------------------------
 
-activated Killer T cell killing mechanism:
-1. Perforin + granzymes
-       >Perforin → forms pores
-       >Granzymes → induce apoptosis
+activated killer T cell killing mechanisms:
+1. Perforin–granzyme pathway
+      -Perforin forms pores in the target cell membrane.
+      -Granzymes enter the target cell and trigger apoptosis.
 2. Fas–FasL pathway
-   - Fas ligand (on NK) binds Fas (CD95) receptor (on target cells)
-   → caspase-8 →  triggers apoptosis in target cells
-*also secrete IFN-gamma -> increases MHC I expression
+      -”Fas ligand (FasL)” on the killer T cell binds Fas (CD95) on the target cell.
+      -This activates caspase-8, leading to apoptosis.
+3. Cytokine secretion
+      -killer T cells also secrete IFN-γ, which can increase MHC I expression and enhance antiviral and immune responses.
+
 —-------------------------------------------------
 
-*Inhibitory signal in activated T cells:
+Inhibitory signal in ALL activated T cells:
 -CTLA-4 receptors on the T cell’s surface 24-48 hrs after activation CTLA-4 is upregulated (initially stored inside the cell, then moves to the surface)
 >B7 binds to the CTLA-4 receptor better than CD28 on T cells
    → suppresses activation
@@ -642,6 +643,9 @@ B CELLS
                → lowers activation threshold
          -CD81- stabilizes and organizes the complex 
                     -helps CD19 function properly
+-naive B cells express CXCR5, which attracts them into CXCL13-rich follicles
+-naive B cells initially express IgM and IgD
+—--------------------------------------
 
 B cell activation
 -Two main types:
@@ -660,49 +664,94 @@ outcomes:
    →No affinity maturation
    →Weak or no memory
    →Short-lived plasma cells
+—---------------------
 
 2 (T-dependent B-cell activation)
--Mainly driven by T follicular helper (Tfh) cells (inside follicles of secondary lymphoid organs)
+-Mainly driven by T follicular helper (Tfh) cells (with matching TCR with the B-cells antigen being presented)  inside follicles of secondary lymphoid organs
 
 Signal 1  
--BCR binds DIRECTLY to intact/native antigen (not via MHC)
--the B cell then internalizes the antigen, processes it into peptides, presents them on MHC class II 
--activated helper/Tfh cell with matching TCR specificity recognizes: peptide–MHC II complex on the B cell 
+-starts in the follicle since naive B cells mainly hang out in the follicles
+-naive B cell’s BCR binds DIRECTLY to intact antigen (not via MHC)
+> then internalizes the antigen, processes it into peptides, presents them on its MHC class II 
+>activated helper/Tfh cell with matching TCR specificity recognizes: peptide–MHC II complex on the B cell 
+>this initially activates the naive B cell, but not fully
 
 Signal 2 (essential costimulation)  
--activated Tfh/helper T cell expresses CD40L > binds to CD40 receptors on B cell
-   >this is essential for full B-cell activation -germinal center formation, class switching, affinity maturation, memory formation 
+-signals 2 and 3 begins at the T–B border in the follicle 
+-Tfh/helper T cell that has already been activated (since they have to have CD40L expressed)  > binds to CD40 receptors on B cell
+   >this is essential for full B-cell activation >>germinal center formation, class switching process, affinity maturation, memory formation 
 
 Signal 3 (cytokine help) 
--key cytokines from the activating helper/Tfh cells help determine:
-   -class switching 
-   -proliferation 
-   -plasma-cell differentiation 
-   -germinal center behavior 
-   -antibody response type
--IL-21 (core Tfh cytokine) -major germinal center cytokine -promotes B-cell proliferation -supports germinal center formation -drives plasma-cell differentiation -enhances affinity maturation and class switching
--IL-4 (commonly from Th2-like Tfh cells / Th2 cells) -activates STAT6 -promotes IgE (and some IgG subclass) switching -important for parasite/allergy responses
--IFN-γ (commonly from Th1-like Tfh cells / Th1 cells) -activates STAT1 -promotes certain opsonizing/complement-fixing IgG subclasses -important for intracellular pathogen responses
--TGF-β (from Tregs, helper T cells, dendritic cells, epithelial/stromal cells) -promotes IgA switching -important for mucosal immunity -contributes to immune regulation/tolerance
--IL-5 (often associated with Th2 responses) -supports IgA production -supports eosinophil responses
--IL-6 (mainly from APCs/innate immune cells) -supports plasma-cell differentiation -contributes to Tfh development and antibody responses
+-Generally the same activated Tfh/helper T cell mainly provides the cytokines to its activating B cell, but cytokines can also come from the environment (although lesser impact).
+-Early antibody production for all activated b cells usually initially begins with IgM production
+-Then later, some daughter cells undergo class-switch recombination
+-With continued T-cell help and cytokine exposure, IgG, IgA, and IgE can begin to appear.
+-So the response often evolves over time:
+      Early response → mostly IgM
+      Later response → more class-switched antibodies
 
-IMPORTANT CONCEPT -Signals 1–3 do NOT instantly determine the final antibody class -Instead, they activate and program the B-cell response -The eventual antibody output depends on: -germinal center dynamics -class-switch recombination -affinity maturation -cytokine environment -time/proliferation
+-(Tfh) → secretes IL-21 (core Tfh cytokine) -major germinal center cytokine 
+   →supports germinal center formation, enhances class switching and affinity maturation, promotes B-cell proliferation, drives plasma-cell differentiation 
 
-POST-ACTIVATION FATES -After Signals 1–3, activated B cells can follow two major pathways
+-(Th1-like Tfh cells / Th1 cells) → secretes IFN-γ  
+   → activates STAT1
+   → promotes opsonizing/complement-fixing IgG subclasses
+   → important for intracellular pathogen responses 
 
-EXTRAFOLLICULAR RESPONSE (early rapid response) -occurs outside follicles -rapid plasma-cell generation -mainly produces IgM -low-affinity antibodies -short-lived plasma cells -limited or minimal memory formation -provides early temporary antibody protection
-IMPORTANT: -IgM is the default initial antibody because naive B cells initially express IgM and IgD -Class switching requires: -CD40 signaling -cytokines -AID activation -time/proliferation -Therefore early extrafollicular responses are commonly IgM-dominant
+-(Th2-like Tfh cells / Th2 cells) → secretes IL-4 
+   → activates STAT6 
+   → promotes IgE (and some IgG subclass) switching (important for parasite/allergy responses)
+-(Th2)  →  IL-5 
+   → supports IgA production 
+   → supports eosinophil responses
+   → opsonizing/complement-fixing IgG subclasses (important for intracellular pathogen responses)
 
-GERMINAL CENTER (GC) REACTION (main high-quality adaptive response) -Activated B cells migrate into follicles of: -lymph nodes -spleen -Germinal centers form within follicles
-DARK ZONE (proliferation + mutation phase) -B cells become centroblasts -Rapid proliferation occurs -Somatic hypermutation (SHM) of Ig variable regions -Class switch recombination (CSR) occurs -Key enzyme: AID (activation-induced cytidine deaminase) -AID is required for: -SHM -CSR -Purpose: -generate diversified antibody variants
-LIGHT ZONE (selection + survival/instruction phase) -B cells become centrocytes -B cells compete for intact antigen displayed on: -follicular dendritic cells (FDCs) -Only higher-affinity B cells capture enough antigen -B cells then present peptide–MHC II to Tfh cells -Tfh cells provide: -CD40L -IL-21 and other cytokines -survival signals -Lower-affinity B cells fail selection and undergo apoptosis
+-(Tregs, dendritic cells, epithelial/stromal cells)  → secretes TGF-β 
+   → promotes IgA switching -important for mucosal immunity -contributes to immune regulation/tolerance
 
-CLASS SWITCHING INFLUENCES -Tfh cytokines help determine antibody isotype: -IL-4 → IgE (and some IgG subclasses) -IFN-γ → certain IgG subclasses -TGF-β → IgA -IL-21 → enhances proliferation, plasma-cell differentiation, and switching
+-(mainly from APCs/innate immune cells)  → secretes IL-6 
+   → supports plasma-cell differentiation 
+   → contributes to Tfh development and antibody responses
+—----------------------
 
-CYCLIC AFFINITY MATURATION LOOP -B cells repeatedly cycle between zones: -Dark zone: -proliferation -mutation -Light zone: -selection -Tfh interaction -survival testing -Repeated cycles progressively increase antibody affinity
+Post-Activation Fates 
+-After Signals 1–3, activated B cells can follow two major pathways:
 
-Outcomes:
+1. Extrafollicular response-occurs outside follicles (early rapid response) 
+   -rapid plasma-cell generation > mainly produces IgM -low-affinity antibodies 
+   -short-lived plasma cells with limited or minimal memory formation 
+
+2. Germinal Center (GC) reaction  (main high-quality adaptive response) 
+-Activated B cells migrate into follicles of secondary lymph nodes and then they form germinal centers within the follicles
+-Signal 1 usually occurs in the follicles
+-Then Signals 2 and 3 usually occur at the T–B border, then some activated B cells migrate back into the follicle and form germinal centers. 
+(dark zone) 
+-proliferation + mutation phase
+   -B cells become centroblasts 
+   -Rapid proliferation occurs 
+   -Somatic hypermutation (SHM) of Ig variable regions 
+         -The B cell intentionally introduces small mutations into the variable region of its antibody genes.
+         -The variable region is the part that binds antigen.
+         -Some mutations make the antibody bind better, while others make it bind worse.
+         -B cells with improved binding are selected to survive.
+         -This gradually increases antibody affinity (“affinity maturation”). 
+   -Class switch recombination (CSR) occurs 
+         -The B cell changes the antibody class/isotype:
+         -IgM → IgG, IgA, or IgE
+         -The antigen-binding specificity stays the same.
+   -key enzyme: AID (activation-induced cytidine deaminase) is required for SHM and CSR 
+      >to generate diversified antibody varients
+(light zone) 
+-selection + survival/instruction phase
+   -B cells become centrocytes 
+   -B cells compete for intact antigen displayed on: 
+         -follicular dendritic cells (fDCs) 
+   -Only higher-affinity B cells capture enough antigen 
+   -B cells then present peptide–MHC II to Tfh cells 
+   -Tfh cells provide: -CD40L, IL-21, and other cytokines > survival signals 
+   -Lower-affinity B cells fail selection and undergo apoptosis
+>>>cyclic affinity maturation loop C -B cells repeatedly cycle between the above zones progressively increasing antibody affinity
+outcomes:
    →Class-switched antibodies (IgG, IgA, IgE) 
    →Affinity maturation, resulting in high-affinity antibodies 
    →Memory B cells (long-term immunity) 
@@ -718,13 +767,18 @@ IgM
 - Strong complement activator
 - Short half-life (~5 days)
 
+IgD
+- B cell receptor on naïve B cells (with IgM)
+- Regulates activation
+- Minimal circulating levels
+
+
 IgG
 - Most abundant in blood
 - Opsonization (phagocytosis)
 - “antibody-dependent cellular cytotoxicity (ADCC)” via NK cells
 - Long half-life (~21 days)
 - Crosses placenta
-
 
 IgA
 - Mucosal immunity (GI, respiratory, saliva, tears, breast milk)
@@ -736,7 +790,4 @@ IgE
 - Binds basophils and mast cells 
 - Allergy and anaphylaxis
 
-IgD
-- B cell receptor on naïve B cells (with IgM)
-- Regulates activation
-- Minimal circulating levels
+
