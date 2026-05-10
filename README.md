@@ -354,6 +354,7 @@ TURNOVER
 ADDITIONAL NOTE
 - Recruit monocytes to tissues → can differentiate into moDCs (temporary replacement system)
 ------------------------------------------------------------------
+
 **INNATE IMMUNE RESPONSE TO VIRAL INFECTION**
 
 plasmacytoid DENDRITIC CELLS (pDCs)
@@ -495,6 +496,7 @@ B. ADAPTIVE IMMUNE SYSTEM
 
 ---------------------------------------------------------------------------
 —-------------------------------------------------------------------------
+
 MHC (MAJOR HISTOCOMPATIBILITY COMPLEX)
 
 (MHC class I)
@@ -554,6 +556,7 @@ full activation = signal 1 + signal 2
    →T-cell proliferation
    →differentiation into specialized helper T-cell subsets
 —----------------------
+
 The cytokines present (secreted by APCs in the area) during full activation determine which helper T-cell subtype develop during the full activation:
 
 (major helper T-cell subsets)  
@@ -790,5 +793,3 @@ IgE
 - Parasites (helminths)
 - Binds basophils and mast cells 
 - Allergy and anaphylaxis
-
-
